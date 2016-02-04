@@ -1,0 +1,85 @@
+.vertnav-container {
+	padding:20px 0 10px 0;
+	border:2px solid #eee;
+	position: relative;
+}
+
+.vertnav-container:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	display: block;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: #f5f5f5;
+	border-width: 10px;
+	margin-left: -10px;
+	margin-bottom:2px;
+}
+
+#vertnav li .vertnav-cat {
+	display:block;
+}
+
+#vertnav li a {
+	display:block;
+	text-decoration: none;
+	padding-right:10px;
+}
+
+#vertnav li.inactive .vertnav-cat {
+	font-weight:normal;
+}
+
+#vertnav .level0 {
+	margin-top:20px;
+}
+
+#vertnav .level0:first-child {
+	margin-top:0;
+}
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+#vertnav .level0 > .vertnav-cat {
+	margin-bottom:10px;
+}
+
+#vertnav .level0 > .vertnav-cat > a {
+	text-transform: uppercase;
+	color:#454545;
+	font-weight: bold;
+	display:block;
+	padding-left:15px;
+}
+
+#vertnav .level1 a {
+	padding:2px 10px 2px 15px;
+	position: relative;
+}
+
+#vertnav .level1 a:after {
+	content: ' ';
+	display: block;
+	width: 6px;
+	height: 8px;
+	position: absolute;
+	right: 10px;
+	top: 9px;
+	background: url(http://www.nexles.com/skin/frontend/pce/default/images/icons/menu-indicator-arrow.png) center center no-repeat;
+}
+
+#vertnav .level1 a:hover:after,
+#vertnav .level1 a.selected:after {
+	background-image: url(http://www.nexles.com/skin/frontend/pce/default/images/icons/menu-indicator-arrow-alt.png);
+}
+
+/*#vertnav .level1 a:hover,*/
+#vertnav .level1 a.selected {
+	background-color:#f5f5f5;
+}
